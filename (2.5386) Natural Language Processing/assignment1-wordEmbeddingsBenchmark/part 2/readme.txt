@@ -1,0 +1,1 @@
+Executing analogy_test.py and similarity_test.py will start the calculation directly. Note that if the word embeddings were not installed, they will be downloaded.
