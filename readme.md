@@ -28,6 +28,10 @@
 │   └── [VRP]VPRFrameworksCompare_Project
 │
 │
+│── (4.5131) Parallel Algorithms & Application in Bio
+│   ├── [parallelSGD]Hogwild_project
+│
+│
 ├── (5.5165) Combinatorial Algorithms
 │   ├── [AssociationRuleMinine]FrequentItemSet_Project
 │   ├── [Backtracking]SUDOKU-non-linearCodes_Assignment2
