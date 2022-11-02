@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+#$ -N "vrptw20_JAMPR"
+#
+python train_low.py

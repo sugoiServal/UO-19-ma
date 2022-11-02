@@ -1,0 +1,17 @@
+digraph D {
+    A [shape=diamond]
+    B [shape=diamond]
+    x [shape=box]
+    output [shape=box]
+ 	
+    A-> {AffineA1, AffineA2, AffineA3} 
+    B->AffineB
+    x->{AffineA1, AffineB}
+    AffineA1->Sigmoid [label="v1"]
+    Sigmoid->Product [label="v3"]
+    AffineB->Product [label="v2"]
+    Product->AffineA2 [label="v4"]
+    AffineA2->AffineA3 [label="v5"]
+    AffineA3->Loss [label="v6"]
+    Loss -> output [label="v7"]
+}

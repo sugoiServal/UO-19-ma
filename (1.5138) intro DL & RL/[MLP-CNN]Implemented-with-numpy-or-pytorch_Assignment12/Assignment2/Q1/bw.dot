@@ -1,0 +1,20 @@
+digraph D {
+    A [shape=diamond]
+    B [shape=diamond]
+    x [shape=box]
+    ones [shape=box]
+    
+    ones -> Loss
+    Loss -> AffineA3  [label="u1"]
+    AffineA3-> AffineA2  [label="u2"] 
+    AffineA3-> A [label="diffA1"] 
+     AffineA2-> A [label="diffA2"]
+    AffineA2->Product [label="u3"] 
+     Product ->AffineB [label="u4"] 
+     Product ->Sigmoid [label="u5"]
+    Sigmoid->AffineA1 [label="u6"]
+    AffineA1 -> A  [label="diffA3"]
+   AffineA1 ->x
+    AffineB -> B [label="diffB"]  
+     AffineB ->x      
+}
